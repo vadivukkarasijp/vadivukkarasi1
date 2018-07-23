@@ -5,7 +5,7 @@ public static void main(String[] args){
 	String a=sc.next();
 	String b=sc.next();
 	String d="";
-	int count=0,count1=0,count2=0;
+	int count=0,count1=0;
 	char ch[]=a.toCharArray();
 	char ch1[]=b.toCharArray();
 	for(int i=0;i<ch.length;i++){
@@ -21,11 +21,7 @@ public static void main(String[] args){
 			d="yes";
 			count1++;
 		}
-		if((a.charAt(0))==(b.charAt(0)) && count1==0 && count==0){
-			d="yes";
-			count2++;
-		}
-		else if(count==0 && count1==0&& count2==0){
+		else if(count==0 && count1==0){
 			d="no";
 		}
 }
